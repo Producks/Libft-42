@@ -6,7 +6,7 @@
 #    By: ddemers <ddemers@student.42quebec.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/20 02:06:17 by ddemers           #+#    #+#              #
-#    Updated: 2022/11/07 20:47:21 by ddemers          ###   ########.fr        #
+#    Updated: 2023/02/28 03:01:56 by ddemers          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,8 @@ src =		ft_atoi.c\
 			ft_putnbr_fd.c\
 			ft_strmapi.c\
 			ft_striteri.c\
-			ft_split.c	
+			ft_split.c\
+			ft_strcmp.c
 bonus =		ft_lstnew.c\
 			ft_lstadd_front.c\
 			ft_lstsize.c\
