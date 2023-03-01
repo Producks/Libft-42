@@ -21,6 +21,14 @@ typedef struct s_list
 	struct s_list	*next;
 }				t_list;
 
+typedef struct s_dlist
+{
+	struct s_dlist	*previous;
+	struct s_dlist	*next;
+	void			*data;
+}	t_dlist;
+
+
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -66,5 +74,9 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	*ft_free(char **str);
+t_dlist	*create_node(void *data);
+void	add_node(t_dlist **head, t_dlist *new_node);
+void	delete_node(t_dlist **head, t_dlist *node_to_delete);
+void	free_linked_list(t_dlist **head);
 
 #endif
