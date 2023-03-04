@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free.c                                          :+:      :+:    :+:   */
+/*   count_double_array.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ddemers <ddemers@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/28 09:47:57 by ddemers           #+#    #+#             */
-/*   Updated: 2023/03/03 21:19:07 by ddemers          ###   ########.fr       */
+/*   Created: 2023/03/03 10:21:30 by ddemers           #+#    #+#             */
+/*   Updated: 2023/03/03 17:33:33 by ddemers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_free(char **str)
+/*Function that count the number of char string into the char**
+Return -1 if the double pointer is NULL, else return the count*/
+size_t	count_double_array(char **array)
 {
-	int	index;
+	size_t	count;
 
-	index = 0;
-	if (!str)
-		return (NULL);
-	while (str[index])
-		free(str[index++]);
-	free (str);
-	return (NULL);
+	count = 0;
+	if (!array)
+		return (-1);
+	while (array[count])
+		count++;
+	return (count);
 }

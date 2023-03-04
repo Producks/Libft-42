@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free.c                                          :+:      :+:    :+:   */
+/*   ft_realloc                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ddemers <ddemers@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/28 09:47:57 by ddemers           #+#    #+#             */
-/*   Updated: 2023/03/03 21:19:07 by ddemers          ###   ########.fr       */
+/*   Created: 2023/03/03 14:45:08 by ddemers           #+#    #+#             */
+/*   Updated: 2023/03/03 15:11:52 by ddemers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_free(char **str)
+void *ft_realloc(void *ptr, size_t size)
 {
-	int	index;
+	void * ret_ptr;
 
-	index = 0;
-	if (!str)
+	ret_ptr = malloc(size);
+	if (!ret_ptr)
 		return (NULL);
-	while (str[index])
-		free(str[index++]);
-	free (str);
-	return (NULL);
+	ft_memcpy(ret_ptr, ptr, size);
+	free(ptr);
+	ptr = NULL;
+	return (ret_ptr);
 }
