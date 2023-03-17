@@ -6,7 +6,7 @@
 #    By: ddemers <ddemers@student.42quebec.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/20 02:06:17 by ddemers           #+#    #+#              #
-#    Updated: 2023/03/03 17:50:50 by ddemers          ###   ########.fr        #
+#    Updated: 2023/03/17 10:14:11 by ddemers          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,8 @@ src =		ft_atoi.c\
 			ft_free.c \
 			double_linked_list.c \
 			ft_realloc.c \
-			count_double_array.c
+			count_double_array.c \
+			ft_isspace.c
 bonus =		ft_lstnew.c\
 			ft_lstadd_front.c\
 			ft_lstsize.c\

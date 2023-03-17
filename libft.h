@@ -80,5 +80,6 @@ void	delete_node(t_dlist **head, t_dlist *node_to_delete);
 void	free_linked_list(t_dlist **head);
 size_t	count_double_array(char **array);
 void	*ft_realloc(void *ptr, size_t size);
+int		ft_isspace(int c);
 
 #endif
