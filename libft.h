@@ -81,5 +81,6 @@ void	free_linked_list(t_dlist **head);
 size_t	count_double_array(char **array);
 void	*ft_realloc(void *ptr, size_t size);
 int		ft_isspace(int c);
+char	*ft_strncpy(char *dest, const char *src, size_t n);
 
 #endif
