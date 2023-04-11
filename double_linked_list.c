@@ -6,7 +6,7 @@
 /*   By: ddemers <ddemers@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 03:46:44 by ddemers           #+#    #+#             */
-/*   Updated: 2023/03/01 05:28:18 by ddemers          ###   ########.fr       */
+/*   Updated: 2023/04/11 15:11:24 by ddemers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_dlist	*create_node(void *data)
 
 void	add_node(t_dlist **head, t_dlist *new_node)
 {
-	t_dlist *current;
+	t_dlist	*current;
 
 	if (*head == NULL)
 		*head = new_node;

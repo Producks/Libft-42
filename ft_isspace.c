@@ -6,11 +6,11 @@
 /*   By: ddemers <ddemers@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 10:14:18 by ddemers           #+#    #+#             */
-/*   Updated: 2023/03/17 16:17:08 by ddemers          ###   ########.fr       */
+/*   Updated: 2023/04/11 15:10:44 by ddemers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isspace(int c)
+int	ft_isspace(int c)
 {
 	if (c == ' ' || c == '\t' || c == '\n'
 		|| c == '\r' || c == '\v' || c == '\f')

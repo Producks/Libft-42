@@ -28,7 +28,6 @@ typedef struct s_dlist
 	void			*data;
 }	t_dlist;
 
-
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
