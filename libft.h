@@ -14,6 +14,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdbool.h>
 
 typedef struct s_list
 {
@@ -81,5 +82,6 @@ size_t	count_double_array(char **array);
 void	*ft_realloc(void *ptr, size_t size);
 int		ft_isspace(int c);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
+char	*ft_strtok(char *str, const char *delim);
 
 #endif
